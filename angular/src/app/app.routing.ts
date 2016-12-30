@@ -7,10 +7,10 @@ import {AboutComponent} from "./about.component";
 
 const appRoutes:Routes = [
     {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
+        path: 'home',
+        component: HomeComponent
     },
+
     {
         path: 'about',
         component: AboutComponent
@@ -22,6 +22,11 @@ const appRoutes:Routes = [
     {
         path: 'discuz',
         component: DiscuzComponent
+    },
+    {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
     },
     // {
     //     path: 'article',
@@ -37,12 +42,8 @@ const appRoutes:Routes = [
     // },
 
     {
-        path: 'home',
-        component: HomeComponent
-    },
-    {
         path: '**',
-        redirectTo: 'home'
+        redirectTo: '/home'
     }
 ];
 export const routing:ModuleWithProviders = RouterModule.forRoot(appRoutes);

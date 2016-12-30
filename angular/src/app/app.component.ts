@@ -8,16 +8,16 @@ import {Router, NavigationStart} from "@angular/router";
     // styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-    private current_uri:string;
+    private current_uri:string = "/home";
     private sub:any;
 
     constructor(private route:Router) {
-
     }
 
     ngOnInit() {
         this.sub = this.route.events.filter(e=>e instanceof NavigationStart).subscribe(param=> {
             this.current_uri = ( param.url == "" || param.url == "/" ) ? "/home" : decodeURI(param.url);
+            console.info(this.current_uri);
         });
     }
 
