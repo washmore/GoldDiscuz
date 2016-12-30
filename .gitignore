@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.iml
+*.log
+
+.idea/
+target/
+
+angular/node_modules/
+src/main/resources/pages/
