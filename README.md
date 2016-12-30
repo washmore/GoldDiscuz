@@ -1,4 +1,5 @@
-# blog
+# GoldDiscuz
+长沙金地自在城业主论坛
 springboot + thymeleaf + angular2 + bootstrap
 
 ### Quick start
@@ -7,10 +8,10 @@ springboot + thymeleaf + angular2 + bootstrap
 ```bash
 # clone our repo
 # --depth 1 removes all but one .git commit history
-git clone --depth 1 https://github.com/1102568869/blog.git
+git clone --depth 1 https://github.com/1102568869/GoldDiscuz.git
 
 # change directory to angular2
-cd blog/angular2-webpack
+cd GoldDiscuz/angular
 
 # install the repo with npm
 npm install
@@ -28,7 +29,7 @@ mvn package
 cd target
 
 # run it!
-java -jar demo.jar
+java -jar gold.jar
 
 ```
-go to [http://0.0.0.0:10086](http://0.0.0.0:10086) or [http://localhost:10086](http://localhost:10086) in your browser
+go to [http://0.0.0.0:10000](http://0.0.0.0:10000) or [http://localhost:10000](http://localhost:10000) in your browser
