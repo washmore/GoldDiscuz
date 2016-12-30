@@ -1,5 +1,5 @@
 # GoldDiscuz
-长沙金地自在城业主论坛
+长沙金地自在城业主论坛    
 springboot + thymeleaf + angular2 + bootstrap
 
 ### Quick start
