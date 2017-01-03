@@ -1,11 +1,11 @@
-package tech.washmore.blog.web.controller;
+package tech.washmore.gold.web.controller;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import tech.washmore.blog.web.dao.Dao;
+import tech.washmore.gold.web.dao.Dao;
 
 /**
  * @author Washmore

@@ -1,4 +1,4 @@
-package tech.washmore.blog.web.model;
+package tech.washmore.gold.web.model;
 
 import java.util.Date;
 

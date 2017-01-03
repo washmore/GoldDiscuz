@@ -1,4 +1,4 @@
-package tech.washmore.blog.web.dao;
+package tech.washmore.gold.web.dao;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.context.annotation.Lazy;

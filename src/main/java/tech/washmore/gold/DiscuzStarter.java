@@ -1,4 +1,4 @@
-package tech.washmore.blog;
+package tech.washmore.gold;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

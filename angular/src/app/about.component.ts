@@ -6,3 +6,16 @@ import {Router, NavigationStart} from "@angular/router";
 })
 export class AboutComponent {
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

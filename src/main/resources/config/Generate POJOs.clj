@@ -1,4 +1,4 @@
-(def package "tech.washmore.blog.web.model")
+(def package "tech.washmore.gold.web.model")
 (def default-type "String")
 (def type-mappings
     [

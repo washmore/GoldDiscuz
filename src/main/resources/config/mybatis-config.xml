@@ -28,7 +28,7 @@
     </settings>
 
     <typeAliases>
-        <!--<typeAlias type="com.lianjia.sh.dk.model.TestInfo" alias="TestInfo"/>-->
+        <typeAlias type="tech.washmore.gold.web.model.Demo" alias="demo"/>
     </typeAliases>
 
 </configuration>
