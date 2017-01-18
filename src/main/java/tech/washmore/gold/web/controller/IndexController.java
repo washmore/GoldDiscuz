@@ -50,13 +50,6 @@ public class IndexController {
         return JSON.toJSONString(dao.selectList("DemoMapper.select"), true);
     }
 
-    @ResponseBody
-    @RequestMapping("webhook")
-    public Map webhook(@RequestParam Map map) {
-        System.out.println(JSON.toJSONString(map, true));
-        return map;
-    }
-
 
 //    @RequestMapping({"/", ""})
 //    public String welcome() {
