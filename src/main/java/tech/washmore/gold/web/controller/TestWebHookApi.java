@@ -1,12 +1,12 @@
 package tech.washmore.gold.web.controller;
 
 import com.alibaba.fastjson.JSON;
-import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import tech.washmore.gold.web.dao.Dao;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
 import java.util.Map;
 
@@ -31,7 +31,8 @@ public class TestWebHookApi {
 
     @ResponseBody
     @RequestMapping("/webhook")
-    public Map webhook(@RequestParam Map map) {
+    public Map webhook(@RequestParam Map map, HttpServletRequest request) {
+        System.out.println(JSON.toJSONString(request.getParameterMap(), true));
         System.out.println(JSON.toJSONString(map, true));
         return map;
     }
