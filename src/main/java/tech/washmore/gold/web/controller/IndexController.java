@@ -6,10 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import tech.washmore.gold.web.dao.Dao;
 
 import java.util.Enumeration;
+import java.util.Map;
 
 /**
  * @author Washmore
@@ -45,7 +47,14 @@ public class IndexController {
     @ResponseBody
     @RequestMapping("test")
     public String test() {
-        return JSON.toJSONString(dao.selectList("TestInfoMapper.select"), true);
+        return JSON.toJSONString(dao.selectList("DemoMapper.select"), true);
+    }
+
+    @ResponseBody
+    @RequestMapping("webhook")
+    public Map webhook(@RequestParam Map map) {
+        System.out.println(JSON.toJSONString(map, true));
+        return map;
     }
 
 

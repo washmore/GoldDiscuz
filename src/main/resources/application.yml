@@ -17,5 +17,5 @@ server:
     compression:
       enabled: true
       mime-types: application/json,application/javascript,text/html,text/xml,text/plain,text/css
-    port: 10000
+    port: 10010
     context-path: /

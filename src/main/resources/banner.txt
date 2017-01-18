@@ -1,5 +1,5 @@
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
   spring-boot.version = ${spring-boot.formatted-version}
-  application.name = washmore's blog
+  application.name = golddiscuz
   instance-id: ${spring.cloud.client.ipAddress}:${server.port}
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
