@@ -31,10 +31,12 @@ public class TestWebHookApi {
 
     @ResponseBody
     @RequestMapping("/webhook")
-    public Map webhook(@RequestParam Map map, HttpServletRequest request) {
+    public Map webhook(@RequestParam Map map, HttpServletRequest request, @RequestBody Map body) {
         System.out.println(JSON.toJSONString(request.getParameterMap(), true));
         System.out.println("---------------------------------");
         System.out.println(JSON.toJSONString(map, true));
+        System.out.println("---------------------------------");
+        System.out.println(JSON.toJSONString(body, true));
         return map;
     }
 
